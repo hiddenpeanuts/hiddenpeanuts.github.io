@@ -164,7 +164,14 @@ rogue podcast
 !bite !chron release axons
 subscribe </font><font class="dana_white">!splotch </font><font class="dana_bottom">confidence 100
 </font></pre></div>
-<b><font color="#FFFF99"><a href="tbd">Feed</a>&nbsp;&nbsp;&nbsp;<blink><a href="helloworld.html">Hello World</a></blink>&nbsp;&nbsp;&nbsp;<a href="https://ilovebees.co/humptydumpty.html">Mission Log</a>&nbsp;&nbsp;&nbsp;<a href="https://www.ilovebees.co/MIA.html">MIA</a>&nbsp;&nbsp;&nbsp;<a href="https://www.ilovebees.co/404.html">Recruits</a></font><br><br></b>
+<script>
+var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+var t = setInterval(function () {
+    var ele = document.getElementById('myBlinkingDiv');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+</script>
+<b><font color="#FFFF99"><a href="tbd">Feed</a>&nbsp;&nbsp;&nbsp;<div id="myBlinkingDiv"><a href="helloworld.html">Hello World</a></div>&nbsp;&nbsp;&nbsp;<a href="https://ilovebees.co/humptydumpty.html">Mission Log</a>&nbsp;&nbsp;&nbsp;<a href="https://www.ilovebees.co/MIA.html">MIA</a>&nbsp;&nbsp;&nbsp;<a href="https://www.ilovebees.co/404.html">Recruits</a></font><br><br></b>
 COUNTDOWN TO WIDE AWAKE AND PHYSICAL:
 <font class="TITLE_WHITE">
 <div id="counter">192966:21:00:04:479</div>
